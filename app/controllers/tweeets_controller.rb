@@ -1,6 +1,6 @@
 class TweeetsController < ApplicationController
   before_action :set_tweeet, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user1,expect: [:index, :show]
   # GET /tweeets
   # GET /tweeets.json
   def index
