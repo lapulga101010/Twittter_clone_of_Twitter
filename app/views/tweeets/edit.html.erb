@@ -1,6 +1,24 @@
-<h1>Editing Tweeet</h1>
+<div class="section">
+ <div class="container">
+  <div class="columns is-centered">
+   <div class="column is-4">
+     <h1 class="title is-2">Editing Tweeet</h1>
+       <%= render 'form', tweeet: @tweeet %>
+       <br />
+       <%= link_to 'Show', @tweeet,class: "button is-info" %>    
+     </div>
+   </div>
+  </div>
+</div>    
 
-<%= render 'form', tweeet: @tweeet %>
 
-<%= link_to 'Show', @tweeet %> |
-<%= link_to 'Back', tweeets_path %>
+<nav class="navbar is-fixed-bottom">
+ <div class="navbar-menu">
+  <div class="navbar-item">
+   <div class="field is-grouped">
+    <p class="control">
+     <%= link_to 'Back', tweeets_path, class: "button is-info" %>
+    </p>
+   </div>
+  </div>
+ </nav>   
