@@ -1,7 +1,7 @@
 # README
 
 
-To run the application run " rails s " in your command line to start the server in your localhost computer
+To run the application run " rails s " in your command line to start the server in your localmachine
 * Ruby version used "2.6.5"
 * Had used "devise" a ruby gem for creating functionalities of user authentication
 * To access database(user details) while running the application :
